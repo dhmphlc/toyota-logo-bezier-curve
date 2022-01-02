@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JPG/SVG</title>
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="../css/curve-page-style.css">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+</head>
+<body>
+    <header>
+        <span>
+            <img src="../images/toyota-logo-png.png" class="head-logo" draggable="false">
+            <p>TOYOTA</p>
+        </span>
+        <ul class="navbar" >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="png-page.html">PNG</a></li>
+            <li><a href="svg-page.html">SVG</a></li>
+            <li><a href="curve-page.html">Bézier curve</a></li>
+        </ul>
+    </header>
+
+    <div id="main">
+        <div class="left">
+            <div class="svg-container">
+                <div class="toyota-curve-logo-box">
+                    <canvas id="myCanvas" width="320" height="210"></canvas>
+                    <script>
+                    var canvas = document.getElementById('myCanvas');
+                    var context = canvas.getContext('2d');
+    
+                    context.beginPath();
+                    context.moveTo(12,112);
+                    context.bezierCurveTo(12, 225, 300, 225, 300, 112);
+                    context.moveTo(12,112);
+                    context.bezierCurveTo(12, 12, 300, 0, 300, 112);
+                    context.moveTo(65,50);
+                    context.bezierCurveTo(12, 112, 300, 112, 252, 50);
+                    context.moveTo(166, 45);
+                    context.bezierCurveTo(125, 32, 125, 207, 173, 175);
+                    context.moveTo(158, 45);
+                    context.bezierCurveTo(200, 32, 200, 207, 152, 175);
+                    context.lineWidth = 20; 
+    
+                    context.strokeStyle = 'black';
+                    context.stroke();
+                    </script>
+                </div>
+            </div>
+
+            <div class="text-container">
+                <h1>Toyota logo SVG</h1>
+                <p>Toyota logo image made using <pre>bezierCurveTo()</pre> javascript function.</p> <br> 
+                Usage: 
+                <code>
+                    context.bezierCurveTo(cp1x,cp1y,cp2x,cp2y,x,y);
+                </code>
+            </div>
+        </div>
+        <div class="right">
+            <div class="code-container">
+                <code class="prettyprint">
+                    &lt;canvas id="myCanvas" width="320" height="210"&gt;&lt;/canvas&gt;<br>
+                    <br>
+                    &lt;script&gt; <br>
+                    var canvas = document.getElementById('myCanvas');<br>
+                    var context = canvas.getContext('2d');<br>
+                    context.beginPath();<br>
+                    context.moveTo(12,112);<br>
+                    context.bezierCurveTo(12, 225, 300, 225, 300, 112);<br>
+                    context.moveTo(12,112);<br>
+                    context.bezierCurveTo(12, 12, 300, 0, 300, 112);<br>
+                    context.moveTo(65,50);<br>
+                    context.bezierCurveTo(12, 112, 300, 112, 252, 50);<br>
+                    context.moveTo(166, 45);<br>
+                    context.bezierCurveTo(125, 32, 125, 207, 173, 175);<br>
+                    context.moveTo(158, 45);<br>
+                    context.bezierCurveTo(200, 32, 200, 207, 152, 175);<br>
+                    context.lineWidth = 20; <br>
+
+                    context.strokeStyle = 'black';<br>
+                    context.stroke();<br>
+                    &lt;/script&gt;
+                </code>
+            </div>
+            <p>Check out how to use it at <a href="https://www.w3schools.com/tags/canvas_beziercurveto.asp" target="_blank">W3schools.com</a></p>
+        </div>
+    </div>
+
+    <footer>
+        <p>2021 Copyright &copy; | Someone, somewhere on Earth.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,56 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@font-face {
+    font-family: ToyotaCopy;
+    src: url(fonts/Rabbid-Highway-Sign-II-Hop.otf);
+}
+#main{
+    border: 1px solid black;
+    width: 1280px;
+    height: 710px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    font-family: ToyotaCopy;
+}
+.left{
+    width: 600px;
+    height: 720px;
+    margin: 0 auto;
+}
+.svg-container{
+    height: 200px;
+    margin-top: 150px;
+    text-align: center;
+    border-radius: 10px;
+}
+.text-container{
+    margin-top: 100px;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 10px;
+    font-size: x-large;
+}
+.right{
+    width: 600px;
+    height: 720px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.right p{
+    text-align: center;
+}
+.code-container{
+    border: 2px solid slateblue;
+    border-radius: 10px;
+    width: 500px;
+    height: 520px;
+    background-color: whitesmoke;
+    color: white;
+    padding: 20px;
+}

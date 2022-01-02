@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Toyota Web Copy</title>
+    <link rel="stylesheet" href="master.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <span>
+            <img src="images/toyota-logo-png.png" class="head-logo" draggable="false">
+            <p>TOYOTA</p>
+        </span>
+        <ul class="navbar" >
+            <li><a href="index.html">Home</a></li>
+            <li><a href="html/png-page.html">PNG</a></li>
+            <li><a href="html/svg-page.html">SVG</a></li>
+            <li><a href="html/curve-page.html">Bézier curve</a></li>
+        </ul>
+    </header>
+
+    <div id="main">
+        <div class="first-article">
+            <div class="slika">
+                <div class="article-header">
+                    <h1>FUTURE is here</h1>
+                    <h2>Introducing the all-new <br>2022 Tundra.</h2>
+                    <p>Our most powerful, most capable <br>and most advanced body-on-frame truck ever. <br>Arriving December 2021.</p>
+                    <button id="preorder-btn">PRE‑ORDER NOW</button>
+                </div>
+            </div>
+        </div>
+        <h2>Explore other vehicles</h2>
+        <div class="other-cars-container">
+            <div class="first-car">
+                <img src="images/camryhybrid.png" alt="camryhybrid" draggable="false" style="filter: drop-shadow(2px 4px 8px #000);">
+                <div class="car-description">
+                    <h2>Camry Hybrid</h2>
+                    <p>$27,380</p>
+                    <a class="popup-btn" href="#" >Explore your vehicle</a>
+                </div>
+            </div>
+
+            <div class="second-car">
+                <img src="images/corollahybrid.png" alt="corollahybrid" draggable="false" style="filter: drop-shadow(2px 4px 8px #000);">
+                <div class="car-description">
+                    <h2>Corolla Hybrid</h2>
+                    <p>$23,650</p>
+                    <a class="popup-btn" href="#" >Explore your vehicle</a>
+                </div>
+            </div>
+
+            <div class="third-car">
+                <img src="images/prius.png" alt="prius" draggable="false" style="filter: drop-shadow(2px 4px 8px #000);">
+                <div class="car-description">
+                    <h2>Prius Hybrid</h2>
+                    <p>$24,525</p>
+                    <a class="popup-btn" href="#" >Explore your vehicle</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>2021 Copyright &copy; | Someone, somewhere on Earth.</p>
+    </footer>
+
+    <!--POPUP BOX-->
+    <div class="hover_bkgr_fricc">
+        <span class="helper"></span>
+        <div class="popup_box">
+            <div class="popupCloseButton">&times;</div>
+            <p>This option is not available for your region.</p>
+        </div>
+    </div>
+</body>
+<script>
+    $(window).load(function () {
+        $(".popup-btn").click(function(){
+           $('.hover_bkgr_fricc').show();
+        });
+        $('.hover_bkgr_fricc').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+        $('.popupCloseButton').click(function(){
+            $('.hover_bkgr_fricc').hide();
+        });
+    });
+</script>
+</html>

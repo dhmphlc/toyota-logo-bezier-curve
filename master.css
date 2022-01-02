@@ -1,0 +1,292 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@font-face {
+    font-family: ToyotaCopy;
+    src: url(fonts/Rabbid-Highway-Sign-II-Hop.otf);
+}
+.head-logo{
+    width: 128px; 
+}
+
+header{
+    width: 1280px;
+    height: 110px;
+    margin: 0 auto;
+    line-height: 110px;
+    font-size: 50px;
+    font-family: ToyotaCopy;
+    color: red;    
+    display: flex;
+    justify-content: space-between;
+    user-select: none;
+}
+header span{
+    width: 400px;
+    height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header span p{
+    margin-left: 20px;
+    font-size: 75px;
+}
+
+.navbar{    
+    width: 1280px;
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navbar li{
+    margin: 5px;
+    display: inline-block;
+}
+.navbar li a{
+    padding: 5px 25px;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: bold;
+}
+.navbar li a:hover{
+    color: red;
+}
+
+/*HOME PAGE*/
+#main h2{
+    font-size: 40px;
+    font-family: ToyotaCopy;
+    text-align: center;
+}
+
+.redtruck-image{
+    display: block;
+    margin: auto;
+    width: 1280px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.article-header{
+    width: 300px;
+    height: 350px;
+    z-index: 1000;
+    font-family: ToyotaCopy;
+    text-align: center;
+    position: relative;
+    left: 100px;
+    top: 100px;
+    background-color: #FFFFFF;
+    border: 1px solid black;
+    box-shadow: 10px 10px 5px black;
+    border-radius: 10px;
+    user-select: none;
+}
+.article-header h1{
+    margin-top: 25px;
+    font-size: 50px;
+}
+.article-header h2{
+    margin-top: 10px;
+    font-size: 30px;
+}
+.article-header p{
+    margin-top: 10px;
+    font-size: 18px;
+}
+#preorder-btn{
+    width: 150px;
+    height: 40px;
+    margin-top: 20px;
+    line-height: 40px;
+    user-select: none;  
+    font-family: ToyotaCopy;
+    font-size: 25px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background:red;
+}
+
+#preorder-btn:hover{
+    cursor: pointer;
+    box-shadow: 5px 5px 5px #c20000;
+}
+
+.slika{
+    margin: 0 auto;
+    background: url(images/redtruck-full-desktop-v3.png) no-repeat;
+    width: 1280px;
+    height: 520px;
+    background-size: cover;
+}
+
+.other-cars-container{
+    display: flex;
+    border: 1px solid #000000;
+    width: 1200px;
+    height: 250px;
+    margin: 0 auto;
+    border-radius: 10px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.first-car{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.second-car{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.third-car{
+    width: 250px;
+    height: 200px;
+    border-radius: 10px;
+    padding: 0px;
+}
+
+.car-description{
+    height: 70px;
+    font-family: ToyotaCopy;
+    /*border: 1px solid #0c2ff2;*/
+    padding-left: 10px;
+}
+.car-description p{
+    font-size: 20px;
+}
+.car-description a{
+    color: #c20000;
+    font-size: 25px;
+    text-decoration: none;
+}
+.car-description a:hover {
+    text-shadow: 2px 2px 8px gray;
+}
+
+
+/*PNG/SVG PAGE*/
+
+.toyota-logo-box{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+.toyota-logo-image{
+    display: block;
+    margin: auto;
+    top: 50%;
+    left: 50%;
+}
+
+.download-btn {
+    background-color: DodgerBlue;
+    border: none;
+    color: white;
+    padding: 12px 30px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-top: 25px;
+}
+.download-btn:hover {
+    background-color: RoyalBlue;
+}
+
+/*BEZIRE CURVE PAGE*/
+
+.toyota-curve-logo-box{
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+
+/* Popup box BEGIN #copy_paste*/
+.hover_bkgr_fricc{
+    background:rgba(0,0,0,.4);
+    cursor:pointer;
+    display:none;
+    height:100%;
+    position:fixed;
+    text-align:center;
+    top:0;
+    width:100%;
+    z-index:10000;
+}
+.hover_bkgr_fricc .helper{
+    display:inline-block;
+    height:100%;
+    vertical-align:middle;
+}
+.hover_bkgr_fricc > div {
+    background-color: #fff;
+    box-shadow: 10px 10px 60px #555;
+    display: inline-block;
+    height: auto;
+    max-width: 551px;
+    min-height: 100px;
+    vertical-align: middle;
+    width: 60%;
+    position: relative;
+    border-radius: 8px;
+    padding: 15px 5%;
+}
+.popupCloseButton {
+    background-color: #fff;
+    border: 3px solid #999;
+    border-radius: 50px;
+    cursor: pointer;
+    display: inline-block;
+    font-family: arial;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    right: -20px;
+    font-size: 25px;
+    line-height: 30px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+}
+.popupCloseButton:hover {
+    background-color: #ccc;
+}
+.trigger_popup_fricc {
+    cursor: pointer;
+    font-size: 20px;
+    margin: 20px;
+    display: inline-block;
+    font-weight: bold;
+}
+/* Popup box END */
+
+
+footer{
+    width: 1280px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 15px;
+    background-color: #555;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    font-family: ToyotaCopy;
+    font-size: 23px;
+}

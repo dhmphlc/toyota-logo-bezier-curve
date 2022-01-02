@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>JPG/SVG</title>
+    <link rel="stylesheet" href="../master.css">
+    <link rel="stylesheet" href="../css/png-page-style.css">
+    <script src="script.js"></script>
+</head>
+<body>
+
+    <header>
+        <span>
+            <img src="../images/toyota-logo-png.png" class="head-logo" draggable="false">
+            <p>TOYOTA</p>
+        </span>
+        <ul class="navbar" >
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="png-page.html">PNG</a></li>
+            <li><a href="svg-page.html">SVG</a></li>
+            <li><a href="curve-page.html">Bézier curve</a></li>
+        </ul>
+    </header>
+
+    <div id="main">
+        <div class="left">
+            <div class="large-image-box">
+                <img src="../images/toyota-logo-png.png" alt="Toyota-logo-png" id="large-image" draggable="false">
+            </div>
+            <div class="small-image-box">
+                <div class="img-icon">
+                    <img src="../images/toyota-logo-png-small.png" alt="Toyota-logo-png" class="toyota-logo-image" draggable="false" onclick="setFirstImage()">
+                </div>
+                <div class="img-icon">
+                    <img src="../images/toyota-logo-tshirt-small.png" alt="Toyota-logo-png" class="toyota-logo-image" draggable="false" onclick="setSecondImage()">
+                </div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="content-container">
+                <h1 style="margin-top: 80px; font-size: 60px;">Toyota Logo PNG</h1>
+                <h1 style="margin-top: 10px;">A copy of Toyota logo</h1>
+                <h4>Free PNG download</h4>
+                <div class="download-btn">
+                    <a href="../images/toyota-logo-png.png" download draggable="false">FREE DOWNLOAD</a>
+                </div>
+                <p><i>Download files at your own risk.</i></p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>2021 Copyright &copy; | Someone, somewhere on Earth.</p>
+    </footer>
+    
+    <script>
+        function setFirstImage() {
+            document.getElementById("large-image").src = "../images/toyota-logo-png.png";
+        }
+        function setSecondImage() {
+            document.getElementById("large-image").src = "../images/toyota-logo-tshirt.png";    
+        }
+    </script>
+</body>
+</html>
